@@ -41,7 +41,7 @@ de API. Para mais informações sobre como fazer isso, leia
 
 <!-- steps -->
 
-## Recriptografar secrets do Kubernetes usando migração de versão de armazenamento
+## Criptografar novamente os secrets do Kubernetes usando migração de versão de armazenamento
 
 - Para começar, [configure o provedor KMS](/docs/tasks/administer-cluster/kms-provider/)
   para criptografar dados em repouso no etcd usando a seguinte configuração de criptografia.
@@ -90,7 +90,7 @@ de API. Para mais informações sobre como fazer isso, leia
           secret: c2VjcmV0IGlzIHNlY3VyZQ==
   ```
 
-- Para garantir que o secret `my-secret` criado anteriormente seja recriptografado
+- Para garantir que o secret `my-secret` criado anteriormente seja criptografado novamente
   com a nova chave `key2`, você utilizará a _Migração de Versão de Armazenamento_.
 
 - Crie um manifesto StorageVersionMigration chamado `migrate-secret.yaml` conforme a seguir:
